@@ -1,0 +1,16 @@
+PODS:
+  - calclib (0.1.0)
+
+DEPENDENCIES:
+  - calclib (from `../`)
+
+EXTERNAL SOURCES:
+  calclib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  calclib: 94dae51e3f3acd016f895f62adbc6b00f5f23882
+
+PODFILE CHECKSUM: ec5d270acf46dd93cf2be3e234a3f499d0b5158b
+
+COCOAPODS: 1.11.3
