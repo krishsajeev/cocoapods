@@ -1,0 +1,6 @@
+use_frameworks!
+target 'calclib_Tests' do
+  pod 'calclib', :path => '../'
+  
+  
+end
