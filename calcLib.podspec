@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'calcLib/Classes/**/*'
 
   s.resource_bundles = {
-    "Assets" => ['calcLib/Assets/Images.xcassets/**/*']
+    'Assets' => ['calcLib/Assets/**/*']
   }
   
   # s.resource_bundles = {
