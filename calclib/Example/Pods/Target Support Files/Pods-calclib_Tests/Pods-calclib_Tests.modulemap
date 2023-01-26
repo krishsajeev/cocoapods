@@ -1,6 +1,0 @@
-framework module Pods_calclib_Tests {
-  umbrella header "Pods-calclib_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
