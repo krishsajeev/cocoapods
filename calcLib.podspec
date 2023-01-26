@@ -31,8 +31,12 @@ TODO: Add long description of the pod here.
   s.platform = :osx
   s.osx.deployment_target = "10.10"
 
-  s.source_files = 'calcLib/**/*'
+  s.source_files = 'calcLib/Classes/**/*'
 
+  s.resource_bundles = {
+    "Assets" => ['calcLib/Assets/Images.xcassets/**/*']
+  }
+  
   # s.resource_bundles = {
   #   'calcLib' => ['calcLib/Assets/*.png']
   # }
