@@ -1,0 +1,26 @@
+use_frameworks!
+target 'calcLib_Tests' do
+  pod 'calcLib', :path => '../'
+  
+  
+end
+
+post_install do |installer|
+  require 'fileutils'
+
+  # Define the path to the library's Assets folder
+  
+  #library_assets_path =  '/Users/sajeev-pt6810/Documents/new/calcLib/calcLib/Assets/'
+  library_assets_path =  "#{File.dirname(__FILE__)}/../calcLib/Assets/"
+
+  
+  #project_assets_path = '/Users/sajeev-pt6810/Documents/new/calcLib/Example/calcLib/Assets.xcassets/'
+  project_assets_path = "#{File.dirname(__FILE__)}/calcLib/Assets.xcassets/"
+  
+  
+  #project_assets_path = "#{installer.lib_path}/Example/calcLib/Assets.xcassets/"
+  
+  # Copy the files from the library's Assets folder to the project's assets folder
+  FileUtils.cp_r("#{library_assets_path}/.", project_assets_path)
+
+end
