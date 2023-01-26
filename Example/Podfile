@@ -10,6 +10,8 @@ post_install do |installer|
 
   # Define the path to the library's Assets folder
   
+  puts "hello !!!!!"
+  
   #library_assets_path =  '/Users/sajeev-pt6810/Documents/new/calcLib/calcLib/Assets/'
   library_assets_path =  "#{File.dirname(__FILE__)}/../calcLib/Assets/"
 
