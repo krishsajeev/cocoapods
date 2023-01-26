@@ -4,11 +4,3 @@ target 'calcLib_Tests' do
   
   
 end
-
-post_install do |installer|
-  require 'fileutils'
-
-  # Define the path to the library's Assets folder
-
-
-end
