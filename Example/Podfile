@@ -1,6 +1,0 @@
-use_frameworks!
-target 'calcLib_Tests' do
-  pod 'calcLib', :path => '../'
-  
-  
-end

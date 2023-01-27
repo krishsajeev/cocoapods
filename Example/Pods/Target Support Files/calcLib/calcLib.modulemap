@@ -1,6 +1,0 @@
-framework module calcLib {
-  umbrella header "calcLib-umbrella.h"
-
-  export *
-  module * { export * }
-}
