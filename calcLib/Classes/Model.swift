@@ -14,7 +14,7 @@ public class Model {
     private var numStk: Model.Stack<Int>
     private var opStk: Model.Stack<Model.Operation>
     
-    init() {
+    public init() {
         self.num = Model.Number()
         self.numStk = Model.Stack<Int> ()
         self.opStk = Model.Stack<Model.Operation> ()
@@ -125,6 +125,18 @@ public class Model {
         
     }
 
+    public func buttonPressed(_ button: String) -> (expression: String?, result: String?, replace: Bool) {
+      switch(button) {
+      case "AC":
+        return buttonPressed(Button.allClear)
+      case "=":
+        return buttonPressed(Button.compute)
+      case "+", "*", "/", "-":
+        return buttonPressed(Button.operation(Operation(rawValue: button)!))
+      default:
+        return buttonPressed(Button.digit(Digit(rawValue: Int(button)!)!))
+      }
+    }
 
     public func buttonPressed(_ button: Model.Button) -> (expression: String?, result: String?, replace: Bool){
         switch (button) {
